@@ -1,0 +1,41 @@
+.banner--homepage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 270px;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: $color-secundario;
+    color: $color-claro;
+    h3{
+        @include font-size(30px);
+        @include titulos($Fuente2);
+        margin-bottom: 5%;
+    }
+    p{
+        @include font-size(27px);
+       
+
+    }
+    .button{
+        
+        padding: 10px;
+        height: 60px;
+        margin-top: 10px;
+        border: 2px solid $color-claro;
+        border-radius: 10px;
+        cursor: pointer;
+        @include font-size(30px);
+        @include titulos($Fuente2);
+    }
+    @include media(mobile-only){
+        max-width: 100%;
+        
+        
+        
+        order:1;
+        height: 70vh;
+       
+    }
+    
+}

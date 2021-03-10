@@ -1,0 +1,55 @@
+.estadistica--articulos {
+	height: 70px;
+	padding: 20px;
+	border-top: 1px solid #E9E9E9;
+	
+	ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		justify-content: space-evenly;
+	}
+		li {
+			list-style: none;
+			color: get-opacity($color-primario, .20);
+		}
+		span  {
+			margin-left: 10px;
+            
+
+		}
+}
+.caja--con-fondo__stats{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    border-top: none;
+    text-align: center;
+   
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 50%;
+    }
+    li{
+        display: flex;
+        margin-right: 20px;
+        opacity: .8;
+    }
+    i{
+        color: $color-claro;
+        @include font-size(27px);
+
+    }
+    span{
+        color: $color-claro;
+        @include font-size(27px);
+
+    }
+    @include media(mobile-only){
+        li{
+            margin-right: 20px;
+        }
+    }
+}

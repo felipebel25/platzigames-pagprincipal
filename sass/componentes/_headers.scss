@@ -1,0 +1,48 @@
+.header--principal{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    padding: 0 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 9rem;
+    border-bottom: 0.1rem solid #ebebeb;
+}
+
+.nav--header ul{
+    display: none;
+    padding-top: 3.5rem;
+    li{
+        list-style: none;
+        margin-right: 5rem;
+    }
+    a{
+        font-size: 1.6rem;
+        color: $color-variacion;
+        @include titulos($Fuente2)
+    }
+    @include media(desktop-s){
+        display: flex;
+    }
+}
+.header__busqueda{
+    display: none   ;
+    margin-left: auto;
+    padding-top: 3.5rem;
+    &:hover{
+        text-decoration: none;
+    }
+    i{
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: $color-secundario;
+    }
+    span{
+        color: $color-variacion;
+        @include titulos(Fuente2);
+        font-size:1.6rem;
+    }
+    @include media(desktop-s){
+        display: flex;
+    }
+}
